@@ -1,0 +1,139 @@
+.video-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+
+    height: 0;
+    background: #f00;
+
+    iframe {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+#conference-playlist {
+    position: relative;
+    z-index: 100;
+}
+    .panel-default{
+        h4{
+            color:  #fff;
+          }
+          p, li {
+              color:#fff;
+      
+              a{
+                  color:#ff0;
+      
+              }
+          }
+    }
+    
+  
+
+    @media(min-width: 1281px) {
+
+        .panel-heading {
+            padding: 1em;
+        }
+
+    }
+
+    @media(min-width: 768px) and(max-width: 1280px) {
+        .panel-title {
+            img {
+                width: auto;
+                max-width: 150px;
+                margin-right: 10px;
+                height:75px;
+            }
+        }
+    }
+
+    @media(max-width: 767px) {
+        top: 10%;
+
+        .panel-title {
+            font-size: 2.5vw;
+
+            img {
+             
+                margin: 0px auto;
+              
+            }
+        }
+
+        .panel-speakers {
+            line-height: 120%;
+        }
+
+        .panel-heading {
+            padding: 3px;
+            clear: both;
+
+
+        }
+
+        .panel-heading a:after {
+            content: "";
+        }
+
+        .panel {
+            border: 0px;
+            background: transparent;
+
+        }
+    }
+
+.session-listing {
+    padding:1em;
+        p, li {
+        font-size: 80%;
+        padding: 3px 5px;
+        line-height: 120%;
+    }
+}
+.panel-speakers{
+    clear:both;
+    font-size:80%;
+    a{
+        display:inline;
+    }
+}
+
+.featured {
+    
+    .featured-wrap {
+        position: relative;
+        img{
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+        .credit {
+            background: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding:3px 5px;
+            border-top-left-radius: 5px;
+            font-size:80%;
+        }
+       
+    }
+
+     .img-title {
+         font-weight: 700;
+     }
+     .caption{
+         padding:10px 20px 5px;
+          background:#f7f7f7;
+     }
+      p{
+         font-style:italic;
+        font-size:80%;
+     }
+   
+}

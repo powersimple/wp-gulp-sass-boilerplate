@@ -1,0 +1,210 @@
+//pink to peach
+//#fcbf7c #eb008b 
+//background:linear-gradient(top, #eb008b 0%,#fcbf7c 100%); 
+
+//blue to aqua
+//#008ed0 to #00ac98
+//background:linear-gradient(top,#008ed0 0%,#00ac98 100%); 
+
+//blue to aqua
+//#fff352 to #9f57a1
+//background: linear-gradient(top,#008ed0 0%,#00ac98 100%); 
+
+//blue to green 
+//#00adee #5cbb6a
+//background: linear-gradient(top,#00adee  0%,#5cbb6a 100%); 
+//
+
+//chartreuse #b2d235 
+//red 
+$lavacolor:aquamarine;
+
+$lavablur:3px;
+/*various blob speeds*/
+$fast:9s;
+$med:12s;
+$slow:15s;
+
+@mixin trap {
+  top:0;right:0;bottom:0;left:0;
+  content:'';
+  position:absolute;
+}
+
+.mid .wrapper {
+  width:100vw;
+  height:100vh;
+  position:relative;
+  left:121px;
+  top:-12px;
+  
+}
+.glass {
+  width:100%;
+  height:100%;
+	@include trap;
+
+
+  overflow:hidden;
+}
+
+
+.top-goop {
+  top:-25px;
+}
+.bot-goop {
+  bottom:-25px;
+}
+.blob {
+  border-radius:50%;
+  position:absolute;
+   
+  
+}
+
+@mixin blobanimator ($anim, $dur){
+  animation: $anim $dur infinite ease-in;
+}
+@mixin blobanimator1 ($anim, $dur){
+  animation: $anim $dur infinite ease-out;
+}
+.blob:nth-of-type(1) {
+  height:80px;
+  width:80px;
+   @include blobanimator(from-bottom, $fast);
+background: linear-gradient(to top,#008ed0 0%,#00ac98 100%); 
+  background-size:contain;
+}
+.blob:nth-of-type(2) {
+  width:80px;
+  height:80px;
+  left:20%;
+  @include blobanimator(from-bottom, $med);
+  animation-delay:1s;
+  bottom:-40px;
+  background:#eb008b;
+
+background: linear-gradient(to bottom, #eb008b 0%,#fcbf7c 100%); 
+  background-size:contain;
+
+}
+.blob:nth-of-type(3){
+  height:70px;
+  width:60px;
+  right:30px;
+   @include blobanimator1(from-top, $slow);
+  top:-80px;
+  background:linear-gradient(to top,#008ed0 0%,#00ac98 100%); 
+  background-size:contain;
+}
+.blob:nth-of-type(4){
+  height:40px;
+  width:40px;
+  left:50px;
+   @include blobanimator(from-top, $med);
+  top:-80px;
+  animation-delay:3s;
+  background: linear-gradient(to top,#008ed0 0%,#00ac98 100%); 
+  background-size:contain;
+}
+.blob:nth-of-type(5){
+  height:6vw;
+  width:6vw;
+  left:50vw;
+   @include blobanimator(from-bottom, $slow);
+  bottom:-80px;
+  animation-delay:3s;
+  background: linear-gradient(to top,#00adee  0%,#5cbb6a 100%); 
+}
+.blob:nth-of-type(5){
+  height:6vw;
+  width:6vw;
+  left:50vw;
+   @include blobanimator(from-bottom, $slow);
+  bottom:-80px;
+  animation-delay:3s;
+  background:#fff352;
+}
+.blob:nth-of-type(6){
+  height:6vw;
+  width:6vw;
+  left:50vw;
+   @include blobanimator(from-left, $slow);
+  bottom:-80px;
+  animation-delay:3s;
+  background:#9f57a1;
+}
+.blob:nth-of-type(7){
+  height:2vw;
+  width:3vw;
+  left:70vw;
+   @include blobanimator(from-bottom, $slow);
+  bottom:-80vh;
+  animation-delay:0s;
+  background:ed2c68;
+}
+.blob:nth-of-type(8){
+  height:6vw;
+  width:6vw;
+  left:50vw;
+   @include blobanimator(from-top, $slow);
+  bottom:-80px;
+  animation-delay:1s;
+  background:#00adee;
+}
+.blob:nth-of-type(9){
+  height:10vw;
+  width:10vw;
+  left:55%;
+   @include blobanimator(from-right, $slow);
+  bottom:-80px;
+  animation-delay:3s;
+  background:#5cbb6a;
+}
+.blob:nth-of-type(10){
+  height:6vw;
+  width:6vw;
+  left:50vw;
+   @include blobanimator(from-bottom, $slow);
+  bottom:-80px;
+  animation-delay:3s;
+  background:#b2d235;
+}
+@keyframes from-bottom {
+  0% {
+    bottom:-8vh;
+  }
+  100% {
+    bottom:100vh;
+  }
+}
+@keyframes from-top {
+  0% {
+    top:-8vh;
+    left:50vw;
+  }
+  100% {
+    top:100vh;
+    right:50vw;
+  }
+}
+  @keyframes from-left {
+  0% {
+    top:-8vh;
+    left:50vw;
+  }
+  100% {
+    bottom:-45vh;
+    right:50vw;
+  }
+}
+  @keyframes from-leftright {
+  0% {
+    top:-8vh;
+    left:90vw;
+  }
+  100% {
+    bottom:-10vh;
+    right:50vw;
+  }
+}

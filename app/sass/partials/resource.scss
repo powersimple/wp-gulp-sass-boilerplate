@@ -1,0 +1,100 @@
+#resources{
+    padding-left:0px;
+    article{
+        background:#DDD;
+        padding:2em;
+        border-radius:1em;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        iframe{
+            width:90% !important;
+            margin:0px auto 1em;
+            display: block;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        list-style: none;
+        margin-bottom:2em;
+        a{
+            color:$_blue;
+        }
+        a:hover{
+            color:$_green;
+        }
+        a.resource-link{
+           
+            font-size:150%;
+        }
+        span.tax-label {
+            color:#666;
+        }
+       
+         transition: all .2s ease-in-out;
+         transform-origin: right center 10%;
+         //box-shadow: 0 5px 15px rgba(76, 121, 186, 0.5);
+         
+         .content-wrap{
+             padding:1em;
+             background-color:#ddd;
+            border-radius:1em;
+            }
+            .resource-profiles{
+                padding:3px;
+                .resource-profile {
+                    background-color:#fff;
+                    display: table-cell;
+                    padding:5px;
+                    border-radius:5px;
+                    .profile-logo{
+                        max-width:50%;
+                        float:left;
+                    }
+                    .profile-meta{
+                       
+                        a{
+                             padding:5px;
+                        }
+                    }
+                }
+            }
+    }
+    article:hover{
+          background:#EEE;
+          transform: scale(1.05);
+    }
+}
+#resources.reverse {
+        a.resource-link {
+            font-size: 150%;
+            font-weight: 900;
+        }
+
+        span.tax-label {
+            color: #aaa;
+        }
+
+        span.taxes {
+            a {
+                color: #ccc;
+            }
+        }
+}
+
+#sdg-menu{
+    padding-left:0px;
+    li{
+         transition: all .2s ease-in-out;
+        list-style: none;
+        padding:5px 0px 5px 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        a{
+            font-size:80%;
+         
+         
+         display: block;
+        }
+        a:hover {
+           
+        }
+    }
+}
